@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<!-- MAIN -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="css/hover-min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- SLIDER -->
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<!-- JQUERY -->
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="menu-wrapper">
+			<div class="menu">
+				<a href="index.html"><div class="logo">up<span>qode</span></div></a>
+				<nav>
+					<ul class="menu-items" id="menu">
+			    		<li class="menu-item active"><a class="menu-link" href="#home">home</a></li>
+			    		<li class="menu-item"><a class="menu-link" href="#choose_us">products</a>
+			      			<ul class="main-dropdown-menu flipInY animated">
+					        	<li><a href="#">name surmane</a></li>
+					        	<li><a href="#">nelson noa chirs</a></li>
+					        	<li><a href="#">name surmane</a>
+					        		<ul class="dropdown-menu fadeIn animated">
+							            <li><a href="#">name surmane</a></li>
+							            <li><a href="#">nelson noa chirs</a></li>
+							             <li><a href="#">name surmane</a></li>
+							            <li><a href="#">nelson noa chirs</a></li>
+							             <li><a href="#">name surmane</a></li>
+							       	</ul>
+			       				</li>
+			       				<li><a href="#">nelson noa</a></li>
+			     			</ul>
+			    		</li>
+			    		<li class="menu-item"><a class="menu-link" href="#about_us">about</a></li>
+			    		<li class="menu-item"><a class="menu-link" href="#contact">contact</a></li>
+			 		 <div class="search-btn-wrapper"><input type="text" name="search"><i class="fa fa-search search-ico" aria-hidden="true"></i></div>
+			 		 </ul>
+				</nav>
+			</div>
+		</div>
+		<!-- menu for  phone -->
+		<div class="menu-phone-wrapper">
+			<div class="menu-phone">
+				<a href="index.html"><div class="logo">up<span>qode</span></div></a>
+				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+				<div class="cross"><i class="fa fa-times" aria-hidden="true"></i></div>
+			</div>	
+				<nav>
+					<ul class="menu-items-phone" id="menu_phone">
+			 		 <div class="search-btn-wrapper"><input type="text" name="search"><i class="fa fa-search search-ico" aria-hidden="true"></i></div>
+			    		<li><a href="#home">home</a></li>
+			    		<li class="products-menu"><a href="#choose_us">products</a>
+			      			<ul class="main-dropdown-menu-phone ">
+					        	<li><a href="#">name surmane</a></li>
+					        	<li><a href="#">nelson noa chirs</a></li>
+					        	<li class="next-dropdown"><a href="#">name surmane</a>
+					        		<ul class="dropdown-menu-phone">
+							            <li><a href="#">name surmane</a></li>
+							            <li><a href="#">nelson noa chirs</a></li>
+							             <li><a href="#">name surmane</a></li>
+							            <li><a href="#">nelson noa chirs</a></li>
+							             <li><a href="#">name surmane</a></li>
+							       	</ul>
+			       				</li>
+			       				<li><a href="#">nelson noa</a></li>
+			     			</ul>
+			    		</li>
+			    		<li><a href="#about_us">about</a></li>
+			    		<li><a href="#contact">contact</a></li>
+			 		 </ul>
+				</nav>
+			<!-- </div> -->
+		</div>
+		<!-- slider -->
+		<div class="slider-banner-wrapper page-section" id="home">
+			<div class="slider-banner">
+			    <div class="slide"><img src="img/banner-slide_1.jpg"></div>
+				<div class="slide"><img src="img/banner-slide_2.jpg"></div>
+				<div class="slide"><img src="img/banner-slide_3.jpg"></div>
+
+			</div>
+			<div class="slider-gradient"></div>
+			<div class="slider-content-wrapper">
+				<div class="slider-title fadeInDown wow">creative <span>design agency</span></div>
+				<div class="slider-text fadeInUp wow"> Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</div>
+			</div>
+		</div>
+	</header>
+	<!-- choose us section -->
+	<div class="choose-us-wrapper page-section" id="choose_us">
+		<div class="choose-us-title-wrapper">
+			<div class="choose-us-title">why <span class="blue-part">choose us</span></div>
+			<div class="choose-us-text">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at acele risque tell us mattis volutpat rhoncus,</div>
+		</div>
+		<div class="choose-box-wrapper">
+			<div class="choose-box">
+				<div class="box-img"><img src="img/ico/box-img_1.png"></div>
+				<div class="box-info">
+					<div class="box-title">your title</div>
+					<div class="box-text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</div>
+				</div>
+				<div class="box-info-hover flipInY animated">
+					<div class="see-more">see more</div>
+					<div class="box-icons-wrapper">
+						<a href="#"><div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div></a>
+						<a href="#"><div class="icon"><i class="fa fa-search-plus" aria-hidden="true"></i></div></a>
+					</div>
+				</div>					
+			</div>
+			<div class="choose-box">
+				<div class="box-img"><img src="img/ico/box-img_2.png"></div>
+				<div class="box-info">
+					<div class="box-title">your title</div>
+					<div class="box-text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</div>
+				</div>
+				<div class="box-info-hover flipInY animated">
+					<div class="see-more">see more</div>
+					<div class="box-icons-wrapper">
+						<a href="#"><div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div></a>
+						<a href="#"><div class="icon"><i class="fa fa-search-plus" aria-hidden="true"></i></div></a>
+					</div>
+				</div>					
+			</div>
+			<div class="choose-box">
+				<div class="box-img"><img src="img/ico/box-img_3.png"></div>
+				<div class="box-info">
+					<div class="box-title">your title</div>
+					<div class="box-text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</div>
+				</div>
+				<div class="box-info-hover flipInY animated">
+					<div class="see-more">see more</div>
+					<div class="box-icons-wrapper">
+						<a href="#"><div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div></a>
+						<a href="#"><div class="icon"><i class="fa fa-search-plus" aria-hidden="true"></i></div></a>
+					</div>
+				</div>					
+			</div>
+			<div class="choose-box">
+				<div class="box-img"><img src="img/ico/box-img_4.png"></div>
+				<div class="box-info">
+					<div class="box-title">your title</div>
+					<div class="box-text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</div>
+				</div>
+				<div class="box-info-hover flipInY animated">
+					<div class="see-more">see more</div>
+					<div class="box-icons-wrapper">
+						<a href="#"><div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div></a>
+						<a href="#"><div class="icon"><i class="fa fa-search-plus" aria-hidden="true"></i></div></a>
+					</div>
+				</div>					
+			</div>
+			<div class="choose-box">
+				<div class="box-img"><img src="img/ico/box-img_5.png"></div>
+				<div class="box-info">
+					<div class="box-title">your title</div>
+					<div class="box-text">Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</div>
+				</div>
+				<div class="box-info-hover flipInY animated">
+					<div class="see-more">see more</div>
+					<div class="box-icons-wrapper">
+						<a href="#"><div class="icon"><i class="fa fa-link" aria-hidden="true"></i></div></a>
+						<a href="#"><div class="icon"><i class="fa fa-search-plus" aria-hidden="true"></i></div></a>
+					</div>
+				</div>					
+			</div>
+		</div>
+	</div>
+	<!-- about us section -->
+	<div class="about-us-wrapper page-section" id="about_us">
+		<div class="about-us-content">
+			<div class="about-us-info">
+				<div class="about-us-title"><span class="blue-part">about </span>us</div>
+				<div class="about-us-text">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est con Nulla feugiat iaculis ante, non tullam at scelerisque tellus. Nulla feu</div>
+				<div>Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tullam at scelerisque tellus. Nulla feugiat iaculis ante, non tNullam at scelerisque tellus. Nulla feugiat iaculis ante, non tullam at scelerisque tellus. Nulla feugiat iaculis ante, non tullam at scelerisque tellus. Nulla feugiat iaculis ante, non t</div>
+				
+				<div class="skill-wrapper">
+					<div class="skill-title">photoshop</div>
+					<div class="skill-percent">79%</div>
+				</div>
+				<div class="skill-bar"><div class="bar bar-ph wow fadeInLeft"></div></div>
+
+				<div class="skill-wrapper">
+					<div class="skill-title">html/css</div>
+					<div class="skill-percent">90%</div>
+				</div>
+				<div class="skill-bar"><div class="bar bar-html wow fadeInLeft"></div></div>
+
+				<div class="skill-wrapper">
+					<div class="skill-title">javascript</div>
+					<div class="skill-percent">69%</div>
+				</div>
+				<div class="skill-bar"><div class="bar bar-js wow fadeInLeft"></div></div>
+
+				<div class="skill-wrapper">
+					<div class="skill-title">wordpress</div>
+					<div class="skill-percent">92%</div>
+				</div>
+				<div class="skill-bar"><div class="bar bar-wp wow fadeInLeft"></div></div>
+			</div>
+			<div class="about-us-img"><img src="img/ipad.png"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="contact-us page-section" id="contact">
+			<div class="get-in-touch-title">get in <span class="blue-part">touch</span></div>
+			<div class="get-in-touch-text">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis. Nullam at acele risque tell us mattis volutpat rhoncus,</div>
+			<div class="map-wrapper">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5145.316401468244!2d24.019303433179676!3d49.848879531430306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1506624463246" width="2500" height="600" frameborder="0" style="border:0" allowfullscreen class="map"></iframe>
+				<div class="map-overlay">
+					<div class="form-wrapper">
+						<div class="form">
+							<div class="contact">
+								<form>
+									<div class="input-group">
+										<input id="name" type="text" name="name" required placeholder="Full Name">
+										<input id="phone" type="email" name="email" required placeholder="E-mail Address">
+									</div>
+									<div class="message-wrapper">
+										<textarea rows="5" cols="90" placeholder="Message" required></textarea>
+									</div>
+									<div class="check-and-send">
+										<div class="check-mark-wrapper">
+											<div class="check-mark"><input type="checkbox" id="checkbox"><label for="checkbox"></label></div>
+											<div class="check-mark-text">I like your company</div>
+										</div>
+											<input type="submit" value="Send" class="send-btn">
+									</div>	
+								</form>
+							</div>	
+							<div class="address">69/A, Some Street Name Your City, code 01234  Country Name<br><br> +880 112 234 234 23 <br>+880 234 234 345 34<br><br>copmapy@mail.com sales@mail.com</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="copyrigrt-text">Copyright &#169; Company. All Rights Reserved  2016</div>
+					<div class="copyrigrt-icons">
+						<a href=""><i class="fa fa-facebook facebook-ico hvr-push" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-google-plus google-ico hvr-push" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter twitter-ico hvr-push" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-dribbble dribbble-ico hvr-push" aria-hidden="true"></i></a>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</footer>
+	<!-- to top btn -->
+	<div id = "toTop" class="hvr-bob"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<!-- SLIDER -->
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<!-- wow -->
+	<script src="js/wow.min.js"></script>
+ 		<script>
+              new WOW().init();
+        </script>
+</body>
+</html>
