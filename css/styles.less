@@ -780,18 +780,67 @@ a{
 					font-weight: 600;
 				}
 			}
+			
 			.hamburger{
-				display: block;
-				i{
-					font-size: 22px;
-					color: 	@blue;
+				width: 30px;
+				height: 30px;
+				padding: 3px;
+				cursor: pointer;
+				box-sizing: border-box;
+				span{
+					margin-top: 3px;
+					position: absolute;
+					display: block;
+					width: 25px;
+					background: @blue;
+					height: 2px;
+					top: 24px;
+					&:before{
+						content: "";
+						position: absolute;
+						display: block;
+						top: -7px;
+						left: 0;
+						width: 100%;
+						background:  @blue;
+						height: 2px;
+						transition: .5s;
+					}
+					&:after{
+						content: "";
+						position: absolute;
+						display: block;
+						top: 7px;
+						left: 0;
+						width: 100%;
+						background:  @blue;
+						height: 2px;
+						transition: .5s;
+					}
 				}
 			}
-			.cross{
-				display: none;
-				i{
-					font-size: 22px;
-					color: 	#00afd8;
+			.hamburger.toggle{
+				span{
+					background: transparent;
+				}
+			}
+			
+			.hamburger.toggle{
+				span{
+					&:before{
+						top: 0px;
+						transform: rotate(45deg);
+						transition: .5s;
+					}
+				}
+			}
+			.hamburger.toggle{
+				span{
+					&:after{
+						top: 0;
+						transform: rotate(-45deg);
+						transition: .5s;
+					}
 				}
 			}
 		}
@@ -866,6 +915,9 @@ a{
 					color: #ffffff;
 				}
 			}
+		}
+		.active{
+			display: block;
 		}
 		.main-dropdown-menu-phone{
 			display: none;

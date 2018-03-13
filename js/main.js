@@ -74,14 +74,8 @@ function up() {
 
 // add phone menu (change hamburger to cross)
 	$(".hamburger").click(function(){
-		$(".menu-items-phone").toggle();
-		$(".hamburger").toggle();
-		$(".cross").toggle();
-	});
-	$(".cross").click(function(){
-		$(".menu-items-phone").toggle();
-		$(".hamburger").toggle();
-		$(".cross").toggle();
+		$(".menu-items-phone").toggleClass("active");
+		$(".hamburger").toggleClass("toggle");
 	});
 	$(".products-menu").click(function(e){
 		// e.stopPropagation();

@@ -784,18 +784,55 @@ a {
     font-weight: 600;
   }
   .menu-phone-wrapper .menu-phone .hamburger {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .menu-phone-wrapper .menu-phone .hamburger span {
+    margin-top: 3px;
+    position: absolute;
     display: block;
+    width: 25px;
+    background: #009dda;
+    height: 2px;
+    top: 24px;
   }
-  .menu-phone-wrapper .menu-phone .hamburger i {
-    font-size: 22px;
-    color: #009dda;
+  .menu-phone-wrapper .menu-phone .hamburger span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    background: #009dda;
+    height: 2px;
+    transition: .5s;
   }
-  .menu-phone-wrapper .menu-phone .cross {
-    display: none;
+  .menu-phone-wrapper .menu-phone .hamburger span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    background: #009dda;
+    height: 2px;
+    transition: .5s;
   }
-  .menu-phone-wrapper .menu-phone .cross i {
-    font-size: 22px;
-    color: #00afd8;
+  .menu-phone-wrapper .menu-phone .hamburger.toggle span {
+    background: transparent;
+  }
+  .menu-phone-wrapper .menu-phone .hamburger.toggle span:before {
+    top: 0px;
+    transform: rotate(45deg);
+    transition: .5s;
+  }
+  .menu-phone-wrapper .menu-phone .hamburger.toggle span:after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: .5s;
   }
   .menu-phone-wrapper .menu-items-phone {
     display: none;
@@ -871,6 +908,9 @@ a {
     width: 100%;
     padding: 5px 40%;
     color: #ffffff;
+  }
+  .menu-phone-wrapper .active {
+    display: block;
   }
   .menu-phone-wrapper .main-dropdown-menu-phone {
     display: none;
